@@ -7,7 +7,7 @@ sourceCompatibility = JavaVersion.VERSION_11
 archivesBaseName = 'GraphColoringGame'
 
 application {
-    mainClass = 'de.tukl.programmierpraktikum2020.p2.main.Main'
+    mainClass = 'src.color/main/Main'
 }
 
 jar {
@@ -27,7 +27,7 @@ test {
 jacocoTestReport {
     afterEvaluate {
         classDirectories.setFrom(files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: 'de/tukl/programmierpraktikum2020/p2/main/**')
+            fileTree(dir: it, exclude: 'src.color/main/Main/**')
         }))
     }
 }
